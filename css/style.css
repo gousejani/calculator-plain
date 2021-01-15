@@ -1,0 +1,102 @@
+*{
+	margin:0;
+	paddin:0;
+	box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Digital';
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot');
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7')
+      format('svg');
+}
+body{
+	background-color: gray;
+}
+.main{
+	margin-top: 30px;
+}
+.cal{
+	margin:auto;
+	width:520px;
+	padding:10px;
+	background-color: black;
+}
+
+.small-screen{
+	width:500px;
+	height:30px;
+	background-color: black;
+	font-family: digital;
+	font-size: 50px;
+	text-align: right;
+	color: rgba(225,225,75);
+	padding-right: 20px;
+	border: 1px solid black;
+	border-bottom: 0px;
+}
+.screen{
+	width:500px;
+	height:150px;
+	background-color: black;
+	font-family: digital;
+	font-size: 150px;
+	text-align: right;
+	color: white;
+	border: 1px solid black;
+	border-top: 0px;
+}
+.cal-body{
+	width: 500px;
+	display: grid;
+	grid-template-columns: 300px 100px 100px;
+}
+.numbers{
+	display:grid;
+	grid-template-columns: 100px 100px 100px;
+}
+.button{
+	width:100px;
+	height:100px;
+	padding:2px;
+	color:white;
+	background-color: rgba(50,50,50,1);
+	border: 1px solid black;
+	text-align: center;
+	font-family: "IBM Plex Mono";
+	font-size: 2em;
+}
+.button-opr{
+	background-color: rgba(75,75,75,1);
+}
+.button-c{
+	background-color: rgba(255,75,75,1);
+}
+.button-ce{
+	background-color: rgba(255,75,75,1);
+}
+.button-equal{
+	background-color: rgba(75,75,255,1);
+}
+.result{
+	display:grid;
+}
+.result #equal{
+	height:200px;
+}
+
+.button:hover{
+	opacity:0.7;
+	border: 0.5px solid white;
+}
+#zero{
+	width:200px;
+	grid-column: 1/3;
+}
